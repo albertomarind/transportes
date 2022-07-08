@@ -1,7 +1,10 @@
 .inicio {
+    
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    min-height: 600px;
+
     .inicio-bg {
         height: 100%;
         position: relative;

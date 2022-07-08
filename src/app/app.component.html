@@ -2,3 +2,8 @@
 <div class="content">
     <router-outlet></router-outlet>
 </div>
+<p-toast>
+    <ng-template let-message pTemplate="message">
+        <app-alerta-flotante [mensaje]="message.detail"></app-alerta-flotante>
+    </ng-template>
+</p-toast>

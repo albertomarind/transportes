@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertasFlotantesService } from 'src/app/servicios/alertas-flotantes.service';
 
 @Component({
   selector: 'app-inicio-sesion',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioSesionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private alertasFlotantesService: AlertasFlotantesService) { }
 
   ngOnInit(): void {
+  }
+
+  iniciarSesion() {
+    this.alertasFlotantesService.mostrar('error', 'El usuario ha sido dado de alta correctamente.');
   }
 
 }

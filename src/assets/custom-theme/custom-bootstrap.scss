@@ -1,9 +1,23 @@
 ::placeholder {
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 17px;
     color: #7f7f7f;
+}
+
+.form-icon{
+    position: relative;
+    .form-control{
+        padding-right: 30px;
+    }
+    .icon{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-25%,-50%);
+        font-size: 26px;
+    }
 }
 
 .btn {
