@@ -8,7 +8,7 @@ import { AutenticacionRoutingModule } from './autenticacion-routing.module';
 
 
 import {CardModule} from 'primeng-lts/card';
-import { BtnRegresarModule } from '../compartidos/btn-regresar/btn-regresar.module';
+import { BtnRegresarModule } from '../../compartidos/btn-regresar/btn-regresar.module';
 
 
 @NgModule({

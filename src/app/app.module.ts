@@ -11,24 +11,32 @@ import { HeaderImssPublicoComponent } from './componentes/header-imss-publico/he
 import { AlertasFlotantesService } from './servicios/alertas-flotantes.service';
 import { MessageService } from 'primeng-lts/api';
 import { AlertaFlotanteModule } from './compartidos/alerta-flotante/alerta-flotante.module';
+import { MenuPrincipalComponent } from './componentes/menu-principal/menu-principal.component';
+import { CargadorModule } from './compartidos/cargador/cargador.module';
+import { CargadorService } from './compartidos/cargador/cargador.service';
+import { OverlayPanelModule } from 'primeng-lts/overlaypanel';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PaginaNoEncontradaComponent,
-    HeaderImssPublicoComponent
+    HeaderImssPublicoComponent,
+    MenuPrincipalComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     ToastModule,
-    AlertaFlotanteModule
+    OverlayPanelModule,
+    AlertaFlotanteModule,
+    CargadorModule
   ],
   providers: [
     MessageService,
-    AlertasFlotantesService
+    AlertasFlotantesService,
+    CargadorService
   ],
   bootstrap: [AppComponent]
 })
