@@ -1,21 +1,44 @@
 ::placeholder {
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 17px;
     color: #7f7f7f;
 }
 
-.form-icon{
+.campos-obligatorios {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 12px;
+    color: #9f2241;
+}
+
+.control-label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.form-control {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #7f7f7f;
+}
+
+.form-icon {
     position: relative;
-    .form-control{
+    .form-control {
         padding-right: 30px;
     }
-    .icon{
+    .icon {
         position: absolute;
         top: 50%;
         right: 0;
-        transform: translate(-25%,-50%);
+        transform: translate(-25%, -50%);
         font-size: 26px;
     }
 }
