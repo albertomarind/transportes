@@ -14,7 +14,34 @@
             </li>
         </ng-container>
     </ul>
+    <div class="menu-user-info" #userInfo>
+        <div class="user-image">
+            <img src="/assets/imagenes/user.svg" alt="Imagen usuario">
+        </div>
+        <div class="user-info">
+            <span class="user-name">Gina Aguilar</span>
+            <span class="user-number">123456789</span>
+        </div>
+
+        <div class="user-action cursor-pointer" (click)="mostrarOverlayUsuario = !mostrarOverlayUsuario">
+            <span class="icon-chevron-down" ></span>
+        </div>
+        <div class="user-overlay" *ngIf="mostrarOverlayUsuario">
+            <div class="user-overlay-data">
+                <div class="user-overlay-role1">Jefe de Servicios Generales</div>
+                <div class="user-overlay-role2">UMAE</div>
+            </div>
+            <div class="user-overlay-logout">
+                <div class="icon">
+                    <i class="pi pi-power-off"></i>
+                </div>
+
+                <span>Cerrar Sesión</span>
+            </div>
+        </div>
+    </div>
 </nav>
+
 <p-overlayPanel #op [appendTo]="menu">
     <ng-template pTemplate>
         <nav class="menu-options">

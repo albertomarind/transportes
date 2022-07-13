@@ -12,6 +12,8 @@ export class MenuPrincipalComponent implements OnInit {
   @ViewChild(OverlayPanel)
   overlayPanel!: OverlayPanel;
 
+  mostrarOverlayUsuario:boolean = false;
+
   // @Output()
   // rutaElementoSeleccionado: EventEmitter<string> = new EventEmitter<string>()
 
