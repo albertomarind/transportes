@@ -6,11 +6,13 @@
                 (click)="opcionSeleccionada = elemento;" [routerLink]="[elemento.ruta]" routerLinkActive="active">
                 <img class="menu-item-icon" src="assets/imagenes/{{elemento.icono}}.svg">
                 <a class="menu-item-text">{{elemento.etiqueta}}</a>
+                <span class="menu-item-border"></span>
             </li>
             <li class="menu-item" [class.active]="elemento == opcionSeleccionada"
                 (click)="abrirOverlay($event,elemento)" *ngIf="!first">
                 <img class="menu-item-icon" src="assets/imagenes/{{elemento.icono}}.svg">
                 <a class="menu-item-text">{{elemento.etiqueta}}</a>
+                <span class="menu-item-border"></span>
             </li>
         </ng-container>
     </ul>
