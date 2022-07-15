@@ -124,6 +124,15 @@ p-dropdown.form-control {
     transform: translateX(-25%);
 }
 
+p-dropdown.p-inputwrapper[ng-reflect-disabled="true"]{
+    cursor: not-allowed;
+}
+
+.p-dropdown.p-component.p-disabled{
+    background-color: #e3e3e3;
+   
+}
+
 .p-dropdown-panel .p-dropdown-items-wrapper .p-dropdown-items {
     padding: 0;
 }

@@ -15,17 +15,17 @@
         <div class="row flex align-items-end mb-4">
             <div class="col-md-6">
                 <label class="control-label" for="OOAD">OOAD<span class="req">*</span>:</label>
-                <p-dropdown id="ooad" class="form-control" [options]="ooad" placeholder="Seleccionar"></p-dropdown>
+                <p-dropdown id="ooad" class="form-control" [options]="ooad" placeholder="Seleccionar" [disabled]="true"></p-dropdown>
             </div>
             <div class="col-md-6">
                 <label class="control-label" for="nombreUnidad">Nombre de la unidad<span class="req">*</span>:</label>
-                <input class="form-control" id="nombreUnidad" placeholder="Ingresar" type="text">
+                <input class="form-control" id="nombreUnidad" placeholder="Ingresar" type="text" disabled>
             </div>
         </div>
         <div class="row flex align-items-end mb-4">
             <div class="col-md-4">
                 <label class="control-label" for="tipoUnidad">Tipo de unidad<span class="req">*</span>:</label>
-                <p-dropdown id="tipoUnidad" class="form-control" [options]="ooad" placeholder="Seleccionar">
+                <p-dropdown id="tipoUnidad" class="form-control" [options]="ooad" placeholder="Seleccionar" [disabled]="true">
                 </p-dropdown>
             </div>
             <div class="col-md-8">
@@ -33,10 +33,10 @@
                         class="req">*</span>:</label>
                 <div class="form-radio">
                     <label>
-                        <input type="radio" name="radio-01" value="opcion-02" checked="checked"> Sí
+                        <input type="radio" name="radio-01" value="opcion-02" checked="checked" disabled> Sí
                     </label>
                     <label>
-                        <input type="radio" name="radio-01" value="opcion-03" checked="checked"> No
+                        <input type="radio" name="radio-01" value="opcion-03" checked="checked" disabled> No
                     </label>
                 </div>
             </div>
@@ -45,29 +45,29 @@
         <div class="row flex align-items-end mb-4">
             <div class="col-md-4">
                 <label class="control-label" for="unInf">UN INF<span class="req">*</span>:</label>
-                <input class="form-control" id="unInf" placeholder="Ingresar" type="text">
+                <input class="form-control" id="unInf" placeholder="Ingresar" type="text" disabled>
             </div>
             <div class="col-md-4">
                 <label class="control-label" for="unOpe">UN OPE<span class="req">*</span>:</label>
-                <input class="form-control" id="unOpe" placeholder="Ingresar" type="text">
+                <input class="form-control" id="unOpe" placeholder="Ingresar" type="text" disabled>
             </div>
             <div class="col-md-4">
                 <label class="control-label" for="cc">CC<span class="req">*</span>:</label>
-                <input class="form-control" id="cc" placeholder="Ingresar" type="text">
+                <input class="form-control" id="cc" placeholder="Ingresar" type="text" disabled>
             </div>
         </div>
         <div class="row flex align-items-end mb-4">
             <div class="col-md-4">
                 <label class="control-label" for="cu">CU<span class="req">*</span>:</label>
-                <input class="form-control" id="cu" placeholder="Ingresar" type="text">
+                <input class="form-control" id="cu" placeholder="Ingresar" type="text" disabled>
             </div>
             <div class="col-md-4">
                 <label class="control-label" for="div">DIV<span class="req">*</span>:</label>
-                <input class="form-control" id="div" placeholder="Ingresar" type="text">
+                <input class="form-control" id="div" placeholder="Ingresar" type="text" disabled>
             </div>
             <div class="col-md-4">
                 <label class="control-label" for="SDIV">SDIV<span class="req">*</span>:</label>
-                <input class="form-control" id="SDIV" placeholder="Ingresar" type="text">
+                <input class="form-control" id="SDIV" placeholder="Ingresar" type="text" disabled>
             </div>
         </div>
         <hr class="separador-small">
@@ -82,8 +82,7 @@
             <div class="col-md-4">
                 <label class="control-label" for="codigoPostal">Código Postal<span class="req">*</span>:</label>
                 <div class="flex">
-                    <input class="form-control" id="codigoPostal" placeholder="Ingresar CP" type="text">
-                    <button class="btn btn-primary">Buscar</button>
+                    <input class="form-control" id="codigoPostal" placeholder="Ingresar CP" type="text" disabled>
                 </div>
             </div>
         </div>
@@ -98,15 +97,15 @@
             </div>
             <div class="col-md-4">
                 <label class="control-label" for="colonia">Colonia<span class="req">*</span>:</label>
-                <input class="form-control" id="colonia" placeholder="Ingresar" type="text">
+                <input class="form-control" id="colonia" placeholder="Ingresar" type="text" disabled>
             </div>
         </div>
     </p-card>
     <div class="flex justify-content-between mt-4">
         <span class="campos-obligatorios">*Campos obligatorios</span>
         <div>
-            <button class="btn btn-gold btn-lg" routerLink="../..">Cancelar</button>
-            <button class="btn btn-primary btn-lg ml-4">Guardar</button>
+            <button class="btn btn-gold btn-lg" routerLink="../.." disabled>Cancelar</button>
+            <button class="btn btn-primary btn-lg ml-4" disabled>Guardar</button>
         </div>
     </div>
 
