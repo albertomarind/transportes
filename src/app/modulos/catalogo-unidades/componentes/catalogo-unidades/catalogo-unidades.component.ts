@@ -6,566 +6,149 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./catalogo-unidades.component.scss']
 })
 export class CatalogoUnidadesComponent implements OnInit {
-  products1: any[] = [
+
+  mostrarModal: boolean = false;
+  
+  unidades: any[] = [
     {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 1,
+      nombreUnidad: 'Nombre de Unidad 1',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 2,
+      nombreUnidad: 'Nombre de Unidad 2',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: false
     },
     {
-      code: '1',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 3,
+      nombreUnidad: 'Nombre de Unidad 3',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 4,
+      nombreUnidad: 'Nombre de Unidad 4',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 5,
+      nombreUnidad: 'Nombre de Unidad 5',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: false
     },
     {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 6,
+      nombreUnidad: 'Nombre de Unidad 6',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: false
     },
     {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 7,
+      nombreUnidad: 'Nombre de Unidad 7',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f2zsd30fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 8,
+      nombreUnidad: 'Nombre de Unidad 8',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 9,
+      nombreUnidad: 'Nombre de Unidad 9',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 10,
+      nombreUnidad: 'Nombre de Unidad 10',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 11,
+      nombreUnidad: 'Nombre de Unidad 11',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 12,
+      nombreUnidad: 'Nombre de Unidad 12',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f2zsd30fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 13,
+      nombreUnidad: 'Nombre de Unidad 13',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 14,
+      nombreUnidad: 'Nombre de Unidad 14',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 15,
+      nombreUnidad: 'Nombre de Unidad 15',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 16,
+      nombreUnidad: 'Nombre de Unidad 16',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 17,
+      nombreUnidad: 'Nombre de Unidad 17',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f2zsd30fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 18,
+      nombreUnidad: 'Nombre de Unidad 18',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 19,
+      nombreUnidad: 'Nombre de Unidad 19',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     },
     {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f2zsd30fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f2zsd30fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f2zsd30fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f2zsd30fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f2zsd30fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f2zsd30fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f2zsd30fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f2zsd30fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f2zsd30fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f2zsd30fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f2zsd30fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230f30234g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fhgfddfg0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f2zsd30fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f230fh3450g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
-    },
-    {
-      code: 'f231230fh0g3',
-      name: 'Bamboo Watch',
-      category: 'Accessories',
-      quantity: 24,
-      price: 65.00
+      id: 20,
+      nombreUnidad: 'Nombre de Unidad 20',
+      ooad: 'OOAD',
+      tipoUnidad: 'Tipo de unidad',
+      unidadPercnota: true
     }
   ];
   constructor() { }
