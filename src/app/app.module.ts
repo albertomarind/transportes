@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { ToastModule } from 'primeng-lts/toast';
 
@@ -27,6 +28,7 @@ import { OverlayPanelModule } from 'primeng-lts/overlaypanel';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     AppRoutingModule,
     ToastModule,
     OverlayPanelModule,

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { CatalogoUnidad } from 'src/app/modelos/catalogo-unidad.interface';
 
 @Component({
   selector: 'app-catalogo-unidades',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatalogoUnidadesComponent implements OnInit {
 
+  catUnidades: CatalogoUnidad[] = [];
+
   mostrarModal: boolean = false;
-  
-  unidades: any[] = [
+
+  unidadesDummy: any[] = [
     {
       id: 1,
       nombreUnidad: 'Nombre de Unidad 1',
@@ -151,9 +155,10 @@ export class CatalogoUnidadesComponent implements OnInit {
       unidadPercnota: true
     }
   ];
-  constructor() { }
+  constructor(private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.catUnidades = this.route.snapshot.data["catUnidades"];
   }
 
 }

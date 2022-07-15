@@ -14,6 +14,7 @@ import { BtnRegresarModule } from 'src/app/compartidos/btn-regresar/btn-regresar
 import { EditarUnidadComponent } from './componentes/editar-unidad/editar-unidad.component';
 import { DetalleUnidadComponent } from './componentes/detalle-unidad/detalle-unidad.component';
 import { FormsModule } from '@angular/forms';
+import { CatalogoUnidadesService } from './servicios/catalogo-unidades.service';
 
 
 @NgModule({
@@ -33,6 +34,9 @@ import { FormsModule } from '@angular/forms';
     TableModule,
     BtnRegresarModule,
     DialogModule
+  ],
+  providers: [
+    CatalogoUnidadesService
   ]
 })
 export class CatalogoUnidadesModule { }
