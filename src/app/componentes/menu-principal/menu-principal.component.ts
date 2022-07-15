@@ -49,7 +49,7 @@ export class MenuPrincipalComponent implements OnInit {
         {
           etiqueta: 'Catálogo de estatus de enajenación de vehículo',
           esTitulo: false,
-          ruta: 'catalogo-de-estatus-de-enajenación-de-vehículo',
+          ruta: 'catalogo-de-estatus-de-enajenacion-de-vehiculo',
         },
         {
           etiqueta: 'Catálogo de tarjetas electrónicas de combustible',
