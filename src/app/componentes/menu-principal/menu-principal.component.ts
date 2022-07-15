@@ -32,7 +32,7 @@ export class MenuPrincipalComponent implements OnInit {
     },
     {
       etiqueta: 'Administración',
-      icono: 'icono-home',
+      icono: 'icono-administracion',
       ruta:'',
       columna1: [],
       columna2: [
@@ -62,7 +62,7 @@ export class MenuPrincipalComponent implements OnInit {
     },
     {
       etiqueta: 'Captura',
-      icono: 'icono-home',
+      icono: 'icono-captura',
       ruta:'',
       columna1: [],
       columna2: [
@@ -123,7 +123,7 @@ export class MenuPrincipalComponent implements OnInit {
     },
     {
       etiqueta: 'Rutas y asignaciones',
-      icono: 'icono-home',
+      icono: 'icono-rutas-asignaciones',
       ruta:'',
       columna1: [],
       columna2: [],
@@ -153,7 +153,7 @@ export class MenuPrincipalComponent implements OnInit {
     },
     {
       etiqueta: 'Reportes y formatos',
-      icono: 'icono-home',
+      icono: 'icono-reportes-formatos',
       ruta:'',
       columna1: [
         {
@@ -267,7 +267,7 @@ export class MenuPrincipalComponent implements OnInit {
     },
     {
       etiqueta: 'Reportes y estadísticas',
-      icono: 'icono-home',
+      icono: 'icono-reportes-formatos',
       ruta:'',
       columna1: [
         {
