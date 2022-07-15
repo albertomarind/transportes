@@ -1,7 +1,12 @@
 <div class="container mb-4">
     <div class="flex align-items-center">
-        <app-btn-regresar  routerLink="../.."></app-btn-regresar>
+        <app-btn-regresar routerLink="../.."></app-btn-regresar>
         <app-separador class="flex-grow-1" texto="Detalle de unidad"></app-separador>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md-12 flex justify-content-end">
+            <button class="btn btn-primary btn-lg" [routerLink]="['../../editar-unidad',2]">Editar</button>
+        </div>
     </div>
 
     <p-card>
@@ -15,7 +20,8 @@
         <div class="row flex align-items-end mb-4">
             <div class="col-md-6">
                 <label class="control-label" for="OOAD">OOAD<span class="req">*</span>:</label>
-                <p-dropdown id="ooad" class="form-control" [options]="ooad" placeholder="Seleccionar" [disabled]="true"></p-dropdown>
+                <p-dropdown id="ooad" class="form-control" [options]="ooad" placeholder="Seleccionar" [disabled]="true">
+                </p-dropdown>
             </div>
             <div class="col-md-6">
                 <label class="control-label" for="nombreUnidad">Nombre de la unidad<span class="req">*</span>:</label>
@@ -25,7 +31,8 @@
         <div class="row flex align-items-end mb-4">
             <div class="col-md-4">
                 <label class="control-label" for="tipoUnidad">Tipo de unidad<span class="req">*</span>:</label>
-                <p-dropdown id="tipoUnidad" class="form-control" [options]="ooad" placeholder="Seleccionar" [disabled]="true">
+                <p-dropdown id="tipoUnidad" class="form-control" [options]="ooad" placeholder="Seleccionar"
+                    [disabled]="true">
                 </p-dropdown>
             </div>
             <div class="col-md-8">
